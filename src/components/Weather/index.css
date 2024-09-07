@@ -1,0 +1,76 @@
+.weather-report-page-main-container{
+    min-height: 92vh;
+    padding: 30px;
+    background-image:linear-gradient(to bottom, #e1dddd,#bfe0e9,#7ac6da,#1d77b7);
+}
+@media screen and (max-width:567px) {
+    .weather-report-page-main-container{
+        padding-left: 0px;
+    }
+}
+.card-main-container-for-wind{
+    display: flex;
+
+}
+.weather-text{
+    padding-left: 25px;
+}
+@media  screen and (max-width:567px) {
+    .card-main-container-for-wind{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.widn-data-container{
+    padding: 20px;
+    background-image: url("https://img.freepik.com/premium-photo/monitoring-air-quality-importance-measuring-air-cleanliness_271410-43852.jpg?w=1060");
+    background-size: cover;
+    width: 50%;
+    border-radius: 12px;
+    margin: 15px;
+}
+@media screen and (max-width:567px) {
+    .widn-data-container{
+        width: 85%;
+        
+    }
+}
+.air-auality-para-text{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: black;
+}
+.air-data-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.air-qualiti-data-para-text{
+    font-family: "Roboto";
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+.temperature-container{
+    background-image: url("https://img.freepik.com/premium-photo/sun-flare-sky-background_811396-160992.jpg?w=900");
+}
+.sunrise-container{
+    background-image: url("https://img.freepik.com/free-vector/sunset-sunrise-ocean-nature-landscape_33099-2244.jpg?t=st=1725693689~exp=1725697289~hmac=ead33ee0872fa6c9b1e908527c9308580fc22e5a7534dab81a12078fc9f860b2&w=1380");
+    animation: move 10s infinite;
+}
+.clouds-container{
+    background-image: url("https://img.freepik.com/free-photo/beautiful-blue-sky-with-white-clouds_144627-137.jpg?t=st=1725693958~exp=1725697558~hmac=0d88c8160b51e018a9ac4a30d88893dfd2ca4afec887b37c84105e0853a79b74&w=740");
+    animation: move 10s infinite;
+}
+@keyframes move {
+    from{
+        width: 60%;
+    }
+    to{
+        width: 85%;
+    }
+}
+.feels-like-container{
+    width: 80%;
+    height: 20vh;
+}
